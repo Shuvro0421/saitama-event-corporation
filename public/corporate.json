@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Conferences and Seminars",
+        "icon_url": "https://i.ibb.co/FsqQG8z/1.png",
+        "image_url": "https://i.ibb.co/nCHdRFM/1-big.jpg",
+        "description": "Experience the pinnacle of knowledge exchange and networking at our Conferences and Seminars. Immerse yourself in a world of innovation and enlightenment, where industry leaders converge to share insights that shape the future. Engage in thought-provoking discussions, gain fresh perspectives, and foster valuable connections. Join us for an intellectual journey that will leave you inspired and informed, ready to tackle the challenges of tomorrow."
+    },
+    {
+        "id": 2,
+        "title": "Trade Shows and Expos",
+        "icon_url": "https://i.ibb.co/WVFwgkX/2.png",
+        "image_url": "https://i.ibb.co/LSVQPnr/2-big.jpg",
+        "description": "Step into the world of Trade Shows and Expos, where innovation meets opportunity. Explore a vibrant marketplace showcasing cutting-edge products and services. Connect with industry leaders, innovators, and investors, forging partnerships that drive success. Immerse yourself in an atmosphere of innovation, where ideas come to life and businesses thrive. Discover endless possibilities and elevate your brand to new heights."
+    },
+    {
+        "id": 3,
+        "title": "Team Building Workshops",
+        "icon_url": "https://i.ibb.co/0FRYM0z/3.png",
+        "image_url": "https://i.ibb.co/1QKSGNt/3-big.jpg",
+        "description": "Embark on a transformative journey with our Team Building Workshops. Strengthen bonds within your team and enhance collaboration in an idyllic setting. Foster trust, communication, and creativity through engaging activities that inspire personal and professional growth. Our workshops empower individuals to unlock their full potential, driving organizational excellence. Join us and create lasting memories while achieving collective success."
+    },
+    {
+        "id": 4,
+        "title": "Product Launches",
+        "icon_url": "https://i.ibb.co/xSjQVzg/4.png",
+        "image_url": "hhttps://i.ibb.co/2YgN22n/4-big.jpg",
+        "description": "Make a grand entrance with our Product Launches. Ignite anticipation and curiosity as you unveil your latest innovation. Our meticulously planned events ensure your product shines in the spotlight, captivating your audience and leaving a lasting impression. With our expertise, your launch will be a memorable journey, from concept to celebration, setting the stage for success."
+    },
+    {
+        "id": 5,
+        "title": "Corporate Meetings",
+        "icon_url": "https://i.ibb.co/RYBCCkY/5.png",
+        "image_url": "https://i.ibb.co/68xZYX0/5-big.jpg",
+        "description": "Elevate your Corporate Meetings to new heights of productivity and inspiration. Our tailor-made events provide the ideal backdrop for strategic discussions and decision-making. Immerse yourself in an environment that fosters innovation, collaboration, and growth. Whether it's charting a new course or celebrating milestones, our corporate meetings redefine excellence."
+    },
+    {
+        "id": 6,
+        "title": "Award Ceremonies",
+        "icon_url": "https://i.ibb.co/GPWqmtZ/6.png",
+        "image_url": "https://i.ibb.co/gw72TV4/6-big.jpg",
+        "description": "Celebrate excellence and achievement at our Award Ceremonies. Step into a world of recognition, where hard work and dedication take center stage. Join us in honoring individuals and organizations that have made a significant impact on their industries and communities. Be part of an unforgettable evening that pays tribute to the relentless pursuit of excellence and the pursuit of a brighter future."
+    }
+]
