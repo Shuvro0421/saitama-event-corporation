@@ -12,6 +12,9 @@ import AuthProvider from './components/AuthProvider';
 import Login from './components/Login';
 import Register from './components/Register';
 import Services from './components/Services';
+import ServiceDetails from './components/ServiceDetails';
+import HappyCustomer from './components/HappyCustomer';
+// import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+
         element: <Home></Home>
       },
       {
@@ -33,7 +37,16 @@ const router = createBrowserRouter([
       },
       {
         path : "/services",
-        element : <Services></Services>
+        element : <Services></Services>,
+      },
+      {
+        path : "/details/:id",
+        element : <ServiceDetails></ServiceDetails>,
+        loader : () => fetch('/corporate.json'),
+      },
+      {
+        path : "/customers",
+        element : <HappyCustomer></HappyCustomer>
       }
     ]
   },

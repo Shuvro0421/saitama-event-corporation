@@ -7,6 +7,8 @@ const Header = () => {
 
     const links = <>
         <li><Link className={`${location.pathname === '/' ? 'text-yellow-500' : ''}`} to="/">Home</Link></li>
+        {/* <li><Link className={`${location.pathname === '/services' ? 'text-yellow-500 ' : ''}`} to="/services">Our Service</Link></li> */}
+
     </>
 
     return (
