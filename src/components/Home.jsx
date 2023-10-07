@@ -3,6 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
 import HappyCustomer from "./HappyCustomer";
+import Contribution from "./Contribution";
 
 
 
@@ -27,6 +28,9 @@ const Home = () => {
             </div>
             <div className="mt-7" data-aos="fade-s">
                 <HappyCustomer></HappyCustomer>
+            </div>
+            <div className="mt-7" data-aos="fade-s">
+                <Contribution></Contribution>
             </div>
         </div>
     );

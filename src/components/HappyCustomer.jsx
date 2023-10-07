@@ -14,14 +14,14 @@ const HappyCustomer = () => {
             <div className="my-5">
                 <Marquee speed={200}>
                     <div className="flex">
-                        <p><FaFacebookSquare className="mr-20 text-yellow-500  text-5xl"></FaFacebookSquare></p>
-                        <p><FaGoogle className="mr-20 text-yellow-500  text-5xl"></FaGoogle></p>
-                        <p><FaAmazon className="mr-20 text-yellow-500  text-5xl"></FaAmazon></p>
-                        <p><FaYoutube className="mr-20 text-yellow-500  text-5xl"></FaYoutube></p>
-                        <p><FaMicrosoft className="mr-20 text-yellow-500  text-5xl"></FaMicrosoft></p>
-                        <p><SiSony className="mr-20 text-yellow-500  text-5xl"></SiSony></p>
-                        <p><SiTesla className="mr-20 text-yellow-500  text-5xl"></SiTesla></p>
-                        <p><SiTata className="mr-20 text-yellow-500  text-5xl"></SiTata></p>
+                        <p><FaFacebookSquare className="mr-20  text-blue-500  md:text-5xl text-4xl"></FaFacebookSquare></p>
+                        <p><FaGoogle className="mr-20 text-slate-900  md:text-5xl text-4xl"></FaGoogle></p>
+                        <p><FaAmazon className="mr-20 text-blue-950 md:text-5xl text-4xl"></FaAmazon></p>
+                        <p><FaYoutube className="mr-20 text-red-700 md:text-5xl text-4xl"></FaYoutube></p>
+                        <p><FaMicrosoft className="mr-20 text-blue-700  md:text-5xl text-4xl"></FaMicrosoft></p>
+                        <p><SiSony className="mr-20 text-black md:text-5xl text-4xl"></SiSony></p>
+                        <p><SiTesla className="mr-20 text-slate-700  md:text-5xl text-4xl"></SiTesla></p>
+                        <p><SiTata className="mr-20 text-blue-950  md:text-5xl text-4xl"></SiTata></p>
                     </div>
                 </Marquee>
             </div>

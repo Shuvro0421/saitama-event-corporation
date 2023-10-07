@@ -14,6 +14,7 @@ import Register from './components/Register';
 import Services from './components/Services';
 import ServiceDetails from './components/ServiceDetails';
 import HappyCustomer from './components/HappyCustomer';
+import Contribution from './components/Contribution';
 // import Footer from './components/Footer';
 
 const router = createBrowserRouter([
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
       {
         path : "/services",
         element : <Services></Services>,
+        loader : () => fetch('/corporate.json'),
       },
       {
         path : "/details/:id",
@@ -47,6 +49,11 @@ const router = createBrowserRouter([
       {
         path : "/customers",
         element : <HappyCustomer></HappyCustomer>
+      },
+      {
+        path : "/contribution",
+        // loader : () => fetch('/contribution.json'),
+        element : <Contribution></Contribution>
       }
     ]
   },

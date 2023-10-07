@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/3NJTF4H/charity.jpg",
+        "title": "Green Gala for a Sustainable Tomorrow",
+        "description": "An event focused on environmental sustainability, featuring tree planting activities, a charity auction to support environmental causes, recycling stations, and a wish-making ceremony for a greener future."
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/G74Tbmj/plating.jpg",
+        "title": "Seeds of Change Fundraiser",
+        "description": "Organize a charity event where attendees plant seeds symbolizing hope and positive change. Proceeds from the event can go towards charity projects aimed at improving the community's future."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/sjYZ5Kx/recycle.jpg",
+        "title": "Recycle & Rejoice Festival",
+        "description": "Create an eco-friendly festival that combines recycling workshops, art installations made from recycled materials, charitable donation drives, and a collective wish for a cleaner, brighter future."
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/P105jsq/social.jpg",
+        "title": "Wishes for Wellness Expo",
+        "description": "Focus on personal and global well-being by incorporating wellness workshops, a charity run/walk to support health-related causes, a station for recycling old electronics, and a collective wish-making ceremony for global health and happiness."
+    }
+]
+
+
+
+

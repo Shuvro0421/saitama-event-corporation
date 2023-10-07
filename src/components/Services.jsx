@@ -1,12 +1,13 @@
 
 import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import ServiceEvent from "./ServiceEvent";
 
 
 const Services = () => {
     const [serviceEvents , setserviceEvents] = useState([])
 
-   
+    // const serviceEvents = useLoaderData()
     useEffect(() =>{
         fetch('corporate.json').then(res => res.json()).then(data => setserviceEvents(data))
     } , [])
@@ -18,7 +19,7 @@ const Services = () => {
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-10 md:mx-60 mx-10 items-center justify-center mb-10">
                 {
-                    serviceEvents.map(serviceEvent => <ServiceEvent key={serviceEvent.id} serviceEvent={serviceEvent}></ServiceEvent>)
+                    serviceEvents?.map(serviceEvent => <ServiceEvent key={serviceEvent.id} serviceEvent={serviceEvent}></ServiceEvent>)
                 }
             </div>
         </div>
