@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { data } from "autoprefixer";
+import { useParams } from "react-router-dom";
+
 
 
 const ServiceDetails = () => {

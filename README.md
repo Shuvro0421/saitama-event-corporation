@@ -1,8 +1,21 @@
-# React + Vite
+# Saitama Event Corporation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Has great authentication system
+- Responsive to all devices
+- Beautiful smart section animations
+- Redirection after login
+- User name and photo shown in the navbar
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Functionalities
+- Without login user cannot see service details
+- User can see 2 extra routes after login
+- The sponsor and contribution are running in loop
+- In small screen, user will there will be image icon just
+- inside that image icon there will be logout button and user name
+
+## Link
+
+[Link to Saitama Event Corporation](https://saitama-event-corporation.web.app/)
+

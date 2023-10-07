@@ -24,8 +24,13 @@ const Header = () => {
 
     const links = <>
         <li><Link className={`${location.pathname === '/' ? 'text-yellow-500' : ''}`} to="/">Home</Link></li>
-        <li><Link className={`${location.pathname === '/about' ? 'text-yellow-500' : ''}`} to="/about">About Us</Link></li>
-        <li><Link className={`${location.pathname === '/projects' ? 'text-yellow-500 ' : ''}`} to="/projects">Mega Projects</Link></li>
+        {
+            user &&
+            <div className="flex lg:flex-row flex-col gap-0 lg:gap-3">
+                <li><Link className={`${location.pathname === '/about' ? 'text-yellow-500' : ''}`} to="/about">About Us</Link></li>
+                <li><Link className={`${location.pathname === '/projects' ? 'text-yellow-500 ' : ''}`} to="/projects">Mega Projects</Link></li>
+            </div>
+        }
         <li><Link className={`${location.pathname === '/contacts' ? 'text-yellow-500 ' : ''}`} to="/contacts">Contact Us</Link></li>
 
     </>
