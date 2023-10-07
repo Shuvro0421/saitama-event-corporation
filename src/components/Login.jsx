@@ -1,16 +1,23 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "./AuthProvider";
 
 
 const Login = () => {
 
-    const { signInUser, handleGoogleSignIn } = useContext(AuthContext);
+    const { signInUser, handleGoogleSignIn, user } = useContext(AuthContext);
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate()
+    const location = useLocation()
+
+    if (user) {
+        navigate(location?.state ? location.state : '/')
+    }
+
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -22,6 +29,7 @@ const Login = () => {
             .then((result) => {
                 console.log(result.user);
                 setSuccess('Signed in Successfully');
+
 
                 setEmail('');
                 setPassword('');

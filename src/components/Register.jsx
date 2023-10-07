@@ -11,7 +11,7 @@ const Register = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [file, setFile] = useState('')
+    const [file, setFile] = useState('');
     const handleRegister = e => {
         e.preventDefault()
 
@@ -40,7 +40,8 @@ const Register = () => {
                 setPassword('')
                 setFile('')
                 // Update user profile here
-                updateProfileInfo(name, file) // You can add a photoURL if needed
+
+                updateProfileInfo(name, file)
                     .then(() => {
                         console.log("User profile updated successfully");
                     })
@@ -50,10 +51,11 @@ const Register = () => {
 
 
 
+
             })
             .catch(error => {
                 user ? setError('User already exits') : setError(error)
-                
+
 
             })
 
@@ -78,11 +80,8 @@ const Register = () => {
                     <div className="form-control">
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)} name="password" placeholder="password" className="input input-bordered" required />
                     </div>
-                    <div className="">
-                        <label htmlFor="image-input" className="file-input-label text-yellow-500 font-semibold">
-                            Upload your Image
-                        </label>
-                        <input type="file" value={file} onChange={e => setFile(e.target.value)} name="file" id="image-input" className="file-input mt-2 file-input-bordered file-input-md w-full max-w-xs" accept="image/*" />
+                    <div className="form-control">
+                        <input type="text" value={file} onChange={e => setFile(e.target.value)} name="file" placeholder="paste image link" className="input input-bordered" />
                     </div>
                     <p className="text-green-600 font-semibold text-sm">{success}</p>
                     <p className="text-rose-600 font-semibold text-sm">{error}</p>

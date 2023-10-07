@@ -1,7 +1,8 @@
 import Marquee from "react-fast-marquee";
 
-import { FaFacebookSquare, FaGoogle, FaAmazon, FaYoutube, FaMicrosoft } from 'react-icons/fa';
+import { FaFacebookSquare, FaAmazon, FaYoutube, FaMicrosoft } from 'react-icons/fa';
 import { SiSony, SiTesla, SiTata } from 'react-icons/si';
+import { FcGoogle } from 'react-icons/fc';
 
 
 
@@ -15,7 +16,7 @@ const HappyCustomer = () => {
                 <Marquee speed={200}>
                     <div className="flex">
                         <p><FaFacebookSquare className="mr-20  text-blue-500  md:text-5xl text-4xl"></FaFacebookSquare></p>
-                        <p><FaGoogle className="mr-20 text-slate-900  md:text-5xl text-4xl"></FaGoogle></p>
+                        <p><FcGoogle className="mr-20  md:text-5xl text-4xl"></FcGoogle></p>
                         <p><FaAmazon className="mr-20 text-blue-950 md:text-5xl text-4xl"></FaAmazon></p>
                         <p><FaYoutube className="mr-20 text-red-700 md:text-5xl text-4xl"></FaYoutube></p>
                         <p><FaMicrosoft className="mr-20 text-blue-700  md:text-5xl text-4xl"></FaMicrosoft></p>

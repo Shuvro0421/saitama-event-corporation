@@ -15,6 +15,10 @@ import Services from './components/Services';
 import ServiceDetails from './components/ServiceDetails';
 import HappyCustomer from './components/HappyCustomer';
 import Contribution from './components/Contribution';
+import PrivateRoute from './components/PrivateRoute';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 // import Footer from './components/Footer';
 
 const router = createBrowserRouter([
@@ -42,8 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path : "/details/:id",
-        element : <ServiceDetails></ServiceDetails>,
-        loader : () => fetch('/corporate.json'),
+        element : <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
       },
       {
         path : "/customers",
@@ -52,6 +55,18 @@ const router = createBrowserRouter([
       {
         path : "/contribution",
         element : <Contribution></Contribution>
+      },
+      {
+        path : "/about",
+        element : <PrivateRoute><About></About></PrivateRoute>
+      },
+      {
+        path : "/projects",
+        element : <PrivateRoute><Projects></Projects></PrivateRoute>
+      },
+      {
+        path : "/contacts",
+        element : <Contacts></Contacts>
       }
     ]
   },
