@@ -8,13 +8,12 @@ const Register = () => {
     const { createUser, user, updateProfileInfo } = useContext(AuthContext)
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [file, setFile] = useState('')
     const handleRegister = e => {
         e.preventDefault()
-
-        const name = e.target.name.value
-        const email = e.target.email.value
-        const password = e.target.password.value
-        const file = e.target.file.value
 
         setSuccess('')
         setError('')
@@ -36,9 +35,12 @@ const Register = () => {
             .then(result => {
                 console.log(result.user)
                 setSuccess('Registered Successfully')
-
+                setName('')
+                setEmail('')
+                setPassword('')
+                setFile('')
                 // Update user profile here
-                updateProfileInfo(name, null) // You can add a photoURL if needed
+                updateProfileInfo(name, file) // You can add a photoURL if needed
                     .then(() => {
                         console.log("User profile updated successfully");
                     })
@@ -46,9 +48,12 @@ const Register = () => {
                         console.error("Error updating user profile: ", error);
                     });
 
+
+
             })
             .catch(error => {
                 user ? setError('User already exits') : setError(error)
+                
 
             })
 
@@ -60,24 +65,24 @@ const Register = () => {
         <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/VpHdrtn/bg.jpg)' }}>
             <div className="hero-overlay bg-opacity-70 bg-black"></div>
 
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card flex-shrink-0 md:w-full w-11/12 max-w-sm shadow-2xl bg-base-100">
                 <p className="text-center font-semibold limelight text-rose-500 text-4xl mt-2">Register</p>
                 {/* form starts */}
                 <form className="card-body" onSubmit={handleRegister}>
                     <div className="form-control">
-                        <input type="name" name="name" placeholder="name" className="input input-bordered" required />
+                        <input type="name" value={name} onChange={e => setName(e.target.value)} name="name" placeholder="name" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                        <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" value={email} onChange={e => setEmail(e.target.value)} name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" value={password} onChange={e => setPassword(e.target.value)} name="password" placeholder="password" className="input input-bordered" required />
                     </div>
                     <div className="">
                         <label htmlFor="image-input" className="file-input-label text-yellow-500 font-semibold">
-                            Choose your Image
+                            Upload your Image
                         </label>
-                        <input type="file" name="file" id="image-input" className="file-input mt-2 file-input-bordered file-input-md w-full max-w-xs" accept="image/*" />
+                        <input type="file" value={file} onChange={e => setFile(e.target.value)} name="file" id="image-input" className="file-input mt-2 file-input-bordered file-input-md w-full max-w-xs" accept="image/*" />
                     </div>
                     <p className="text-green-600 font-semibold text-sm">{success}</p>
                     <p className="text-rose-600 font-semibold text-sm">{error}</p>
