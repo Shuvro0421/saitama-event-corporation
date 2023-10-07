@@ -39,7 +39,6 @@ const router = createBrowserRouter([
       {
         path : "/services",
         element : <Services></Services>,
-        loader : () => fetch('/corporate.json'),
       },
       {
         path : "/details/:id",
@@ -52,7 +51,6 @@ const router = createBrowserRouter([
       },
       {
         path : "/contribution",
-        // loader : () => fetch('/contribution.json'),
         element : <Contribution></Contribution>
       }
     ]

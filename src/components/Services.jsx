@@ -1,13 +1,13 @@
 
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+
 import ServiceEvent from "./ServiceEvent";
 
 
 const Services = () => {
     const [serviceEvents , setserviceEvents] = useState([])
 
-    // const serviceEvents = useLoaderData()
+
     useEffect(() =>{
         fetch('corporate.json').then(res => res.json()).then(data => setserviceEvents(data))
     } , [])
